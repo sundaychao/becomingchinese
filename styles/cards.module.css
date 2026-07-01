@@ -1,0 +1,153 @@
+.categoryCard {
+  display: grid;
+  min-height: 19rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border-top: 1px solid rgb(37 38 34 / 24%);
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1.25rem;
+  color: var(--color-ink);
+  text-decoration: none;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.categoryCard:nth-child(3n + 2) {
+  background: rgb(216 207 190 / 35%);
+}
+
+.categoryCard:hover {
+  background: var(--color-white);
+  transform: translateY(-3px);
+}
+
+.character {
+  color: var(--color-cinnabar);
+  font-family: "Noto Serif SC", SimSun, serif;
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  line-height: 1;
+}
+
+.categoryCard h3,
+.articleCopy h3 {
+  margin: 0;
+  line-height: 1.15;
+}
+
+.categoryCard h3 {
+  font-size: 1.4rem;
+}
+
+.categoryCard p {
+  margin: 1rem 0;
+  color: var(--color-muted);
+}
+
+.arrow {
+  color: var(--color-cinnabar);
+  font-size: 1.4rem;
+}
+
+.featuredArticle,
+.articleCard {
+  min-width: 0;
+}
+
+.featuredArticle a,
+.articleCard a {
+  display: grid;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.featuredArticle a {
+  grid-template-rows: minmax(20rem, 1.35fr) auto;
+}
+
+.articleCard a {
+  grid-template-columns: minmax(9rem, 0.8fr) 1.2fr;
+}
+
+.articleVisual {
+  position: relative;
+  display: grid;
+  min-height: 14rem;
+  overflow: hidden;
+  place-items: center;
+  background: linear-gradient(145deg, var(--color-tea), #b5b8a9);
+}
+
+.featuredArticle .articleVisual {
+  background: linear-gradient(145deg, #d4c2a7, #718070);
+}
+
+.articleVisual::after {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  border: 1px solid rgb(245 241 233 / 55%);
+  border-radius: 50%;
+  content: "";
+  transform: translate(28%, 32%);
+}
+
+.articleVisual span {
+  color: rgb(245 241 233 / 80%);
+  font-family: "Noto Serif SC", SimSun, serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 1;
+}
+
+.articleCopy {
+  padding: clamp(1.35rem, 2.8vw, 2.5rem);
+  background: var(--color-white);
+}
+
+.articleCopy h3 {
+  font-size: clamp(1.45rem, 2.8vw, 2.5rem);
+}
+
+.articleCard .articleCopy h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+.articleCopy > p:not(.articleMeta) {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 1rem 0;
+  color: var(--color-muted);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.articleMeta {
+  margin: 0 0 0.75rem;
+  color: var(--color-cinnabar);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.readLink {
+  font-weight: 700;
+}
+
+.featuredArticle a:hover .readLink,
+.articleCard a:hover .readLink {
+  color: var(--color-cinnabar);
+}
+
+@media (max-width: 48rem) {
+  .categoryCard {
+    min-height: auto;
+    grid-template-columns: 3.5rem 1fr;
+  }
+
+  .articleCard a {
+    grid-template-columns: 1fr;
+  }
+
+  .articleCard .articleVisual {
+    min-height: 11rem;
+  }
+}
