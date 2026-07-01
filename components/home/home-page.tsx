@@ -3,6 +3,7 @@ import type { Category } from '@/content/categories'
 import type { Locale } from '@/lib/i18n'
 import type { SearchDocument } from '@/lib/search'
 import styles from '@/styles/home.module.css'
+import { DemoForm } from '@/components/forms/demo-form'
 
 import { CategoryGrid } from './category-grid'
 import { Hero } from './hero'
@@ -46,13 +47,7 @@ export function HomePage({ locale, categories, articles, searchIndex }: HomePage
             {locale === 'en' ? 'Keep learning, one story at a time.' : '一次读一个故事，继续了解中国。'}
           </h2>
         </div>
-        <form className={styles.newsletterForm}>
-          <label className={styles.visuallyHidden} htmlFor="newsletter-email">
-            {locale === 'en' ? 'Email address' : '电子邮箱'}
-          </label>
-          <input id="newsletter-email" type="email" placeholder={locale === 'en' ? 'Your email address' : '你的电子邮箱'} />
-          <button type="button">{locale === 'en' ? 'Join the newsletter' : '订阅通讯'}</button>
-        </form>
+        <DemoForm variant="newsletter" locale={locale} />
       </section>
     </>
   )
