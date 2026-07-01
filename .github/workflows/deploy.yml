@@ -36,6 +36,7 @@ jobs:
         # 绑定自定义域名后，把 NEXT_PUBLIC_BASE_PATH 改为空
         env:
           NEXT_PUBLIC_BASE_PATH:
+          NEXT_PUBLIC_GA_ID: G-JZCFJ3EK37
         run: npm run build
 
       - name: Add .nojekyll
