@@ -1,0 +1,8 @@
+.languageSwitcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.languageSwitcher button {
+  cursor: pointer;
+}
