@@ -33,3 +33,11 @@ Dimensions were read from the final PNG headers after proportional width normali
 - Treat photographed or illustrated text inside raster imagery as asset content, not UI typography.
 - Use the dedicated categories and newsletter/footer concepts instead of incidental previews embedded in hero and stories.
 - Do not ship these concepts as static UI; navigation, copy, controls and icons remain code-native.
+
+## Final implementation verification — 2026-07-01
+
+- Desktop viewport: 1440 x 1000. Hero copy, search result, palette, readable type, and article layout verified with no horizontal overflow.
+- Mobile viewport: 390 x 844. Hero hierarchy, search control, menu control, and artwork verified with no horizontal overflow.
+- Interaction flow verified: homepage search, article rendering with JSON-LD, three-result Chinese name generator, contact validation/local demo submission, and localized 404 recovery links.
+- Locale routing verified: country header `CN` redirects to `/zh`; an explicit `bc-locale=en` cookie overrides it and redirects to `/en`.
+- The in-app Browser backend stalled during navigation, so the same checks were completed with local headless Chrome DevTools automation. Screenshots were kept outside the repository as temporary QA evidence.
