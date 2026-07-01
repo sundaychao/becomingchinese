@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[22016,["/becomingchinese/_next/static/chunks/1el5-48au3iai.js","/becomingchinese/_next/static/chunks/14mrh2-p_w84d.js","/becomingchinese/_next/static/chunks/2nls6btigjd2x.js","/becomingchinese/_next/static/chunks/0bc3wmsh6eaa3.js"],""]
+3:I[95984,["/becomingchinese/_next/static/chunks/1el5-48au3iai.js","/becomingchinese/_next/static/chunks/14mrh2-p_w84d.js","/becomingchinese/_next/static/chunks/2nls6btigjd2x.js","/becomingchinese/_next/static/chunks/0bc3wmsh6eaa3.js"],"NameGenerator"]
+4:I[97367,["/becomingchinese/_next/static/chunks/1el5-48au3iai.js","/becomingchinese/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+:HL["/becomingchinese/_next/static/chunks/1m3fjxw95ukzm.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"tools-module__aoiAHq__page","children":[["$","$L2",null,{"className":"tools-module__aoiAHq__backLink","href":"/zh/tools","children":["← ","全部工具"]}],["$","header",null,{"className":"tools-module__aoiAHq__generatorHeader","children":[["$","p",null,{"children":"中文名生成器"}],["$","h1",null,{"children":"找到一个有故事的中文名。"}],["$","span",null,{"children":"告诉我们一点关于你的信息，我们会直接在浏览器中为你提供三个用心的名字灵感。"}]]}],["$","$L3",null,{"locale":"zh"}]]}],[["$","link","0",{"rel":"stylesheet","href":"/becomingchinese/_next/static/chunks/1m3fjxw95ukzm.css","precedence":"next"}],["$","script","script-0",{"src":"/becomingchinese/_next/static/chunks/0bc3wmsh6eaa3.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"y17luTF0LEwD7Q6QABfJR"}
+6:null

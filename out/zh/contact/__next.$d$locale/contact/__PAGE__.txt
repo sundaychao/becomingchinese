@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[8111,["/becomingchinese/_next/static/chunks/1el5-48au3iai.js","/becomingchinese/_next/static/chunks/14mrh2-p_w84d.js","/becomingchinese/_next/static/chunks/2nls6btigjd2x.js","/becomingchinese/_next/static/chunks/06vyo34c67r7o.js"],"DemoForm"]
+3:I[97367,["/becomingchinese/_next/static/chunks/1el5-48au3iai.js","/becomingchinese/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/becomingchinese/_next/static/chunks/4580sza44qxzj.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"forms-module__2Mv_TG__page","children":[["$","header",null,{"className":"forms-module__2Mv_TG__pageHeader","children":[["$","h1",null,{"children":"联系我们"}],["$","p",null,{"children":"使用演示表单预览联系编辑团队的流程。"}]]}],[["$","section","demo-contact",{"className":"forms-module__2Mv_TG__section","children":[["$","h2",null,{"children":"仅供演示"}],[["$","p","The MVP contact form validates entries locally. It does not transmit, deliver or store any message.",{"children":"MVP 联系表单仅在本地验证输入，不会传输、发送或存储任何消息。"}]]]}]],["$","$L2",null,{"locale":"zh","variant":"contact"}]]}],[["$","link","0",{"rel":"stylesheet","href":"/becomingchinese/_next/static/chunks/4580sza44qxzj.css","precedence":"next"}],["$","script","script-0",{"src":"/becomingchinese/_next/static/chunks/06vyo34c67r7o.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"y17luTF0LEwD7Q6QABfJR"}
+5:null

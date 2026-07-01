@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
-import { isLocale } from '@/lib/i18n'
+import { isLocale, LOCALES } from '@/lib/i18n'
 import styles from '@/styles/tools.module.css'
 
 const pageCopy = {
@@ -32,6 +32,10 @@ const pageCopy = {
     ],
   },
 } as const
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }))
+}
 
 export default async function ToolsPage({ params }: Readonly<{ params: Promise<{ locale: string }> }>) {
   const { locale } = await params

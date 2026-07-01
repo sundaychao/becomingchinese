@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { NameGenerator } from '@/components/tools/name-generator'
-import { isLocale } from '@/lib/i18n'
+import { isLocale, LOCALES } from '@/lib/i18n'
 import styles from '@/styles/tools.module.css'
 
 const pageCopy = {
@@ -19,6 +19,10 @@ const pageCopy = {
     intro: '告诉我们一点关于你的信息，我们会直接在浏览器中为你提供三个用心的名字灵感。',
   },
 } as const
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }))
+}
 
 export default async function ChineseNameGeneratorPage({
   params,

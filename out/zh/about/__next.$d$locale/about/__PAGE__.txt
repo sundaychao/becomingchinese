@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/becomingchinese/_next/static/chunks/1el5-48au3iai.js","/becomingchinese/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+:HL["/becomingchinese/_next/static/chunks/4580sza44qxzj.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"forms-module__2Mv_TG__page","children":[["$","header",null,{"className":"forms-module__2Mv_TG__pageHeader","children":[["$","h1",null,{"children":"关于 Becoming Chinese"}],["$","p",null,{"children":"一份介绍中文、中国文化与日常生活的实用双语指南。"}]]}],[["$","section","purpose",{"className":"forms-module__2Mv_TG__section","children":[["$","h2",null,{"children":"我们提供什么"}],[["$","p","We create clear, original introductions for curious readers who want useful context before a conversation, trip or new experience.",{"children":"我们为好奇的读者创作清晰原创的入门内容，帮助大家在交流、旅行或体验新事物前获得实用背景。"}]]]}]]]}],[["$","link","0",{"rel":"stylesheet","href":"/becomingchinese/_next/static/chunks/4580sza44qxzj.css","precedence":"next"}]],["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"y17luTF0LEwD7Q6QABfJR"}
+4:null

@@ -6,6 +6,8 @@ import { fixedPages } from '@/content/pages'
 import { LOCALES } from '@/lib/i18n'
 import { localizedAlternates } from '@/lib/seo'
 
+export const dynamic = 'force-static'
+
 const staticPaths = [
   '',
   '/articles',

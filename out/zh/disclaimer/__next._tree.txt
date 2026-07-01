@@ -1,0 +1,4 @@
+:HL["/becomingchinese/_next/static/chunks/28680sn2xec56.css","style"]
+:HL["/becomingchinese/_next/static/chunks/3z7o3ahfcavba.css","style"]
+:HL["/becomingchinese/_next/static/chunks/4580sza44qxzj.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"locale","param":{"type":"d","key":"zh","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"disclaimer","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"y17luTF0LEwD7Q6QABfJR"}

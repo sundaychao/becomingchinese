@@ -1,8 +1,12 @@
 import { notFound } from 'next/navigation'
 
 import { getFixedPage } from '@/content/pages'
-import { isLocale } from '@/lib/i18n'
+import { isLocale, LOCALES } from '@/lib/i18n'
 import styles from '@/styles/forms.module.css'
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }))
+}
 
 export default async function PrivacyPage({ params }: Readonly<{
   params: Promise<{ locale: string }>

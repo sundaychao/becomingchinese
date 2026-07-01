@@ -2,8 +2,12 @@ import { notFound } from 'next/navigation'
 
 import { DemoForm } from '@/components/forms/demo-form'
 import { getFixedPage } from '@/content/pages'
-import { isLocale } from '@/lib/i18n'
+import { isLocale, LOCALES } from '@/lib/i18n'
 import styles from '@/styles/forms.module.css'
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }))
+}
 
 export default async function ContactPage({ params }: Readonly<{
   params: Promise<{ locale: string }>

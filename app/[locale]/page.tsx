@@ -3,7 +3,11 @@ import { notFound } from 'next/navigation'
 import { HomePage } from '@/components/home/home-page'
 import { articles } from '@/content/articles'
 import { categories } from '@/content/categories'
-import { isLocale } from '@/lib/i18n'
+import { isLocale, LOCALES } from '@/lib/i18n'
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }))
+}
 
 export default async function LocaleHomePage({ params }: Readonly<{
   params: Promise<{ locale: string }>
