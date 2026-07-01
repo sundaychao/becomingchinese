@@ -15,6 +15,34 @@ describe('article search', () => {
     expect(searchArticles('not-a-real-topic', index)).toEqual([])
   })
 
+  it('independently searches title, summary, category and tags', () => {
+    const index = buildSearchIndex('en')
+
+    expect(
+      searchArticles('Mandarin Phrases for Everyday Moments', index).map(
+        (item) => item.slug,
+      ),
+    ).toContain('mandarin-phrases-for-everyday-moments')
+    expect(searchArticles('moral choices', index).map((item) => item.slug)).toContain(
+      'wuxia-a-world-built-on-choices',
+    )
+    expect(
+      searchArticles('Chinese Entertainment', index).map((item) => item.slug),
+    ).toContain('wuxia-a-world-built-on-choices')
+    expect(searchArticles('hospitality', index).map((item) => item.slug)).toContain(
+      'tea-is-never-just-a-drink',
+    )
+  })
+
+  it('isolates search text to the requested locale', () => {
+    const index = buildSearchIndex('zh')
+
+    expect(searchArticles('武侠', index).map((item) => item.slug)).toContain(
+      'wuxia-a-world-built-on-choices',
+    )
+    expect(searchArticles('wuxia', index)).toEqual([])
+  })
+
   it('returns the complete index for an empty query', () => {
     const index = buildSearchIndex('zh')
 
@@ -27,7 +55,7 @@ describe('article search', () => {
 
     expect(tea).toEqual({
       slug: 'tea-is-never-just-a-drink',
-      title: 'Tea Is Never Just a Drink',
+      title: 'Why tea is never just a drink',
       summary: expect.any(String),
       category: 'Chinese Lifestyle',
       tags: expect.arrayContaining(['tea']),

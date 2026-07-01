@@ -30,7 +30,10 @@ export const articles: Article[] = [
       { en: 'hospitality', zh: '待客' },
       { en: 'daily life', zh: '日常生活' },
     ],
-    title: { en: 'Tea Is Never Just a Drink', zh: '茶，从来不只是一杯饮料' },
+    title: {
+      en: 'Why tea is never just a drink',
+      zh: '为什么茶从来不只是一杯饮料',
+    },
     summary: {
       en: 'A practical introduction to sharing tea, reading the pace of the table and enjoying the moment without ceremony anxiety.',
       zh: '从实用角度了解如何一起喝茶、读懂茶桌节奏，并在不拘泥仪式的情况下享受当下。',
