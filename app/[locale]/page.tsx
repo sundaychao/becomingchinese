@@ -4,7 +4,6 @@ import { HomePage } from '@/components/home/home-page'
 import { articles } from '@/content/articles'
 import { categories } from '@/content/categories'
 import { isLocale } from '@/lib/i18n'
-import { buildSearchIndex } from '@/lib/search'
 
 export default async function LocaleHomePage({ params }: Readonly<{
   params: Promise<{ locale: string }>
@@ -18,7 +17,6 @@ export default async function LocaleHomePage({ params }: Readonly<{
       locale={locale}
       categories={categories}
       articles={articles}
-      searchIndex={buildSearchIndex(locale)}
     />
   )
 }

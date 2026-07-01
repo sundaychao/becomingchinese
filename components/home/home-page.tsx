@@ -1,12 +1,10 @@
 import type { Article } from '@/content/articles'
 import type { Category } from '@/content/categories'
 import type { Locale } from '@/lib/i18n'
-import type { SearchDocument } from '@/lib/search'
 import styles from '@/styles/home.module.css'
 import { DemoForm } from '@/components/forms/demo-form'
 
 import { CategoryGrid } from './category-grid'
-import { Hero } from './hero'
 import { StoryGrid } from './story-grid'
 import { ToolStrip } from './tool-strip'
 
@@ -14,13 +12,11 @@ type HomePageProps = Readonly<{
   locale: Locale
   categories: Category[]
   articles: Article[]
-  searchIndex: SearchDocument[]
 }>
 
-export function HomePage({ locale, categories, articles, searchIndex }: HomePageProps) {
+export function HomePage({ locale, categories, articles }: HomePageProps) {
   return (
     <>
-      <Hero locale={locale} index={searchIndex} />
       <CategoryGrid categories={categories} locale={locale} />
       <StoryGrid articles={articles} locale={locale} />
       <ToolStrip locale={locale} />
