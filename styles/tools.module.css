@@ -1,0 +1,265 @@
+.page {
+  width: min(calc(100% - 3rem), var(--container));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 6rem) var(--space-section);
+}
+
+.pageHeader,
+.generatorHeader {
+  max-width: 48rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.pageHeader > p,
+.generatorHeader > p {
+  margin: 0 0 0.8rem;
+  color: var(--color-cinnabar);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.pageHeader h1,
+.generatorHeader h1 {
+  max-width: 45rem;
+  margin: 0 0 1.25rem;
+  font-family: Georgia, "Noto Serif SC", serif;
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.pageHeader > span,
+.generatorHeader > span {
+  display: block;
+  max-width: 42rem;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.toolGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.toolCard {
+  min-height: 18rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid rgb(37 38 34 / 14%);
+  border-radius: var(--radius-md);
+  background: rgb(255 255 255 / 48%);
+}
+
+.toolNumber {
+  color: var(--color-cinnabar);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.toolCard h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-family: Georgia, "Noto Serif SC", serif;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  font-weight: 500;
+}
+
+.toolCard p {
+  max-width: 30rem;
+  margin: 0 0 2rem;
+  color: var(--color-muted);
+}
+
+.toolCard a,
+.comingSoon,
+.backLink {
+  color: var(--color-cinnabar);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.disabledTool {
+  opacity: 0.58;
+}
+
+.comingSoon {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
+.generatorShell {
+  display: grid;
+  gap: 3.5rem;
+}
+
+.generatorForm {
+  max-width: 48rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgb(37 38 34 / 14%);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  box-shadow: 0 1.5rem 4rem rgb(37 38 34 / 6%);
+}
+
+.fieldGroup {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.fieldGroup label {
+  font-weight: 700;
+}
+
+.fieldGroup input,
+.fieldGroup select {
+  width: 100%;
+  min-height: 3.2rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgb(37 38 34 / 25%);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+}
+
+.fieldGroup input[aria-invalid="true"],
+.fieldGroup select[aria-invalid="true"] {
+  border-color: var(--color-cinnabar);
+}
+
+.fieldGroup small {
+  color: var(--color-muted);
+}
+
+.fieldError {
+  margin: 0;
+  color: var(--color-cinnabar);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.selectRow {
+  display: grid;
+  margin-top: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.primaryButton,
+.copyButton {
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.primaryButton {
+  min-width: 11rem;
+  min-height: 3.2rem;
+  padding: 0.8rem 1.5rem;
+  margin-top: 2rem;
+  background: var(--color-cinnabar);
+  color: var(--color-white);
+}
+
+.primaryButton:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.results h2 {
+  margin: 0 0 1.5rem;
+  font-family: Georgia, "Noto Serif SC", serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 500;
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.resultCard {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-top: 3px solid var(--color-cinnabar);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  background: var(--color-white);
+}
+
+.hanzi {
+  margin: 0;
+  font-family: "Noto Serif SC", SimSun, serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.2;
+}
+
+.pinyin {
+  margin: 0.3rem 0 1.5rem;
+  color: var(--color-cinnabar);
+  font-weight: 700;
+}
+
+.resultCard dl,
+.resultCard dd {
+  margin: 0;
+}
+
+.resultCard dl {
+  display: grid;
+  gap: 1rem;
+}
+
+.resultCard dt {
+  margin-bottom: 0.2rem;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.copyButton {
+  padding: 0.6rem 1rem;
+  margin-top: 1.5rem;
+  border: 1px solid var(--color-cinnabar);
+  background: transparent;
+  color: var(--color-cinnabar);
+}
+
+.copyStatus {
+  min-height: 1.6rem;
+  margin: -2rem 0 0;
+  color: var(--color-sage);
+  font-weight: 700;
+}
+
+@media (max-width: 48rem) {
+  .page {
+    width: min(calc(100% - 2rem), var(--container));
+  }
+
+  .toolGrid,
+  .resultGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolCard {
+    min-height: auto;
+  }
+
+  .selectRow {
+    grid-template-columns: 1fr;
+  }
+}
