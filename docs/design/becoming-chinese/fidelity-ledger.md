@@ -1,33 +1,35 @@
 # Becoming Chinese Visual Fidelity Ledger
 
-Status: Accepted by the user on 2026-07-01; binding visual reference for implementation.
+Status: Accepted by the user on 2026-07-01 after review fixes. These images are visual references only; production UI text remains code-native.
 
-## Accepted concept set
+## Final concept inventory
 
-| Section | Concept file | Implementation contract |
-|---|---|---|
-| Hero | `home-hero-concept.png` | Use the navigation, headline, supporting copy, search composition, mountain/sun treatment, color and spacing. The visible preview below the hero is superseded by the dedicated categories concept. |
-| Categories | `home-categories-concept.png` | Use the six-column desktop family, Chinese character anchors, concise descriptions, imagery and `Explore all` link. |
-| Stories | `home-stories-concept.png` | Use one dominant lead story and two secondary stories. The newsletter teaser inside this image is superseded by the dedicated newsletter concept. |
-| Tools | `home-tools-concept.png` | Use the open rail/list treatment, primary name generator, supporting tools and still-life image area. |
-| Community | `home-community-concept.png` | Use the split quote/image composition and attribution hierarchy. |
-| Newsletter/Footer | `home-newsletter-concept.png` | Use the dark newsletter band, light structured footer, language control and legal link row. Footer labels will follow the approved information architecture rather than invented image text. |
+Dimensions were read from the final PNG headers after proportional width normalization. Every file is exactly 1440 px wide; no image was cropped.
+
+| Section | Concept file | Final dimensions | Measurable typography observation at native size | Sampled dominant colors | Visual evidence and deviation record |
+|---|---|---:|---|---|---|
+| Hero | `home-hero-concept.png` | 1440 x 960 | Modern sans-serif throughout the English UI. Two-line H1 has an approximately 58 px visible capital height and 87 px line advance; supporting copy is approximately 25 px high; nav/control text is approximately 18 px. | `#F8EEE0`, `#FBF8F2`, `#E4D8C7`, `#77675A` | Header, search, headline and mountain/sun composition are intact. The lower categories preview remains incidental and is superseded by the dedicated categories concept. |
+| Categories | `home-categories-concept.png` | 1440 x 768 | English H2 is modern sans-serif with approximately 51 px visible capital height and 63 px line advance. Category labels are approximately 19 px; descriptions approximately 14 px. Chinese anchors retain display calligraphy. | `#F8F3ED`, `#8E7763`, `#DFD5CB`, `#F4EFE8` | Six equal desktop entries and all six Chinese anchors remain visible. No crop or compositional change; this section is shorter because its original aspect ratio was preserved. |
+| Stories | `home-stories-concept.png` | 1440 x 1026 | English display hierarchy is modern sans-serif: section H2 approximately 47 px visible capital height; lead headline approximately 45 px with about 64 px line advance; secondary headlines approximately 29-31 px. The lower-right title was explicitly re-typeset in 31 px Arial sans-serif after generated edits retained serif forms. | `#E1DBD2`, `#F2EEEA`, `#101310`, `#1F1D18`, `#564A3E` | One lead story and two secondary stories remain in the accepted geometry and imagery roles. The newsletter teaser remains incidental and is superseded by the dedicated newsletter concept. Localized retouching behind the lower-right headline creates a slightly flatter light field than the surrounding generated texture; no content or hierarchy changed. |
+| Tools | `home-tools-concept.png` | 1440 x 1025 | English UI uses modern sans-serif. H2 has approximately 54 px visible capital height; primary tool title approximately 32 px; supporting/tool copy approximately 19 px. Chinese `名` remains a display glyph. | `#F7F2EB`, `#F6F1EA`, `#F5F0E8`, `#DBD2C9` | Open rail/list structure, three tool entries and still-life imagery are unchanged. Serif lettering embedded on photographed book props is imagery, not English UI typography. |
+| Community | `home-community-concept.png` | 1440 x 1025 | All English copy is coordinated modern sans-serif. Quote letters have approximately 49 px visible height with roughly 80 px line advance; `understanding` remains cinnabar in the same sans family. Attribution is approximately 26 px; body/link text approximately 17 px. | `#F6F3ED`, `#584C3E`, `#DFD6C8`, `#AFA694` | Split quote/portrait composition, copy, attribution and hierarchy are preserved. Warm Song-style Chinese display text remains in the kicker and bottom band by design. |
+| Newsletter / Footer | `home-newsletter-concept.png` | 1440 x 1023 | All English display and footer typography is coordinated modern sans-serif. Newsletter headline has approximately 47 px visible capital height and 75 px line advance; brand wordmark approximately 34 px; footer headings approximately 18 px and links approximately 14 px. | `#151514`, `#F3F0EB`, `#E6E0DA`, `#35302E` | Dark newsletter band, input, structured six-column footer, legal row and language control are preserved. Small generated footer sublinks remain visual texture; approved information architecture is authoritative. Warm Chinese calligraphy remains. |
 
 ## Review checks
 
-| Check | Concept evidence | Implementation requirement |
+| Check | Required evidence | Accepted result / deviation |
 |---|---|---|
-| Copy | Hero and section concepts render the approved primary headings and article/tool names. | Code-native text must use approved copy; generated incidental text is not authoritative. |
-| Layout | Hero → categories → stories → tools → community → newsletter/footer. | Preserve this exact section order and first-viewport balance. |
-| Typography | Concepts show large display type, readable body copy and deliberate control text. | Desktop body ≥16px, mobile body ≥14px, supporting text ≥12px. |
-| Palette | Cinnabar, ink, rice paper, pale tea and muted sage dominate every concept. | Use the locked tokens without introducing purple, neon or unrelated gradients. |
-| Container | Hero is open; categories are a selectable family; stories use editorial frames; tools use rails. | Do not convert open bands or rails into generic card grids. |
-| Asset treatment | Ink mountains, editorial photography and still-life imagery blend into each section. | Use generated or licensed project assets with matching crop, lighting and background integration. |
-| Mobile intent | Primary content and controls have clear hierarchy that can collapse vertically. | Keep navigation, search, section links and language control visible at 390px. |
+| Copy | Hero headline and section labels match the specification | `home-hero-concept.png` shows “Your practical guide to everyday China.”; the section files retain their original headings and labels. Generated incidental footer sublinks are not authoritative. |
+| Layout | Hero -> categories -> stories -> tools -> community -> newsletter | The six files map one-to-one to this order. All are 1440 px wide and retain their source aspect ratios; heights are recorded above. No crop was used. |
+| Typography | Desktop body >=16 px, supporting text >=12 px | Native-image measurements show body/supporting text ranges of approximately 14-25 px. Categories descriptions are approximately 14 px, above the 12 px support minimum. Stories, community and newsletter now use modern sans-serif English display typography; Chinese display text remains Song/calligraphic. |
+| Palette | Cinnabar, ink, rice paper, tea and sage only | Quantized dominant samples are recorded per file above. The repeated near-whites, charcoal/ink and tea neutrals match the locked family; visible cinnabar and sage accents remain. No purple or unrelated gradient was observed. |
+| Container | Open sections; cards only for actual selectable content | Hero and community remain open compositions; categories and stories frame selectable editorial content; tools remain rails; newsletter remains a full-width band. No generic dashboard-card treatment was introduced. |
+| Mobile intent | Primary controls and content hierarchy remain visible | Desktop references preserve clear collapse order: nav/search, category entries, lead before secondary stories, tool rails, quote before portrait, newsletter input before footer columns. Production must keep these controls visible at 390 px; no separate mobile raster concept exists. |
 
-## Intentional concept reconciliation
+## Binding implementation notes
 
-- The hero image's lower preview is not a separate approved section; the dedicated categories concept governs the next section.
-- The stories image's internal newsletter teaser is omitted because the dedicated newsletter/footer concept governs newsletter placement.
-- Footer navigation uses the product specification's six areas and fixed pages; small generated sublink text is visual texture, not locked information architecture.
-- All production UI copy, icons and controls remain code-native; the concept images are never shipped as static UI screenshots.
+- Preserve exact section order, copy hierarchy, container model, dominant palette and imagery roles shown here.
+- Use a modern sans-serif for all production English UI and display text; use warm Song-style Chinese display typography where shown.
+- Treat photographed or illustrated text inside raster imagery as asset content, not UI typography.
+- Use the dedicated categories and newsletter/footer concepts instead of incidental previews embedded in hero and stories.
+- Do not ship these concepts as static UI; navigation, copy, controls and icons remain code-native.
